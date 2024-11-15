@@ -48,7 +48,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('assets/moon.png');
+  background-image: url('assets/moon.webp');
   background-size: cover;
   background-position: center;
 }
@@ -125,7 +125,7 @@ button:hover {
   justify-content: center;
   padding: 100px 20px;
   min-height: 100vh;
-  background-image: url('assets/Untitled design.png');
+  background-image: url('assets/starryhori.webp');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -201,7 +201,7 @@ button:hover {
 #modules {
   position: relative;
   height: 100vh;
-  background-image: url('assets/untitled-design.png');
+  background-image: url('assets/starryhori.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -251,6 +251,145 @@ button:hover {
 .right-arrow {
   right: 20px;
 }
+
+
+/* Testimonials Section */
+#testimonials {
+  background-image: url('assets/starryhori.webp');
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Adjust the text color if needed for better contrast */
+  padding: 50px 20px; /* Add padding to the section */
+  text-align: center; /* Center align the text */
+}
+
+
+.container-testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #FFD700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.testimonial {
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #dcdcdc;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial h4 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #FFD700;
+}
+
+/* Organizers Section */
+#organizers {
+
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.container-organizers h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #FFD700;
+}
+
+.organizers-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.organizer {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.organizer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.organizer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.organizer h4 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.organizer .role {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #777;
+}
+
+.organizer blockquote {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 15px 0 0;
+  color: #555;
+  border-left: 4px solid #3f51b5;
+  padding-left: 10px;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 50px 0;
+  background-image: url('assets/starryhori.webp');
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-item {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 480px) {
+  .gallery-container {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
 
 footer {
   background-color: #0b0c10;
