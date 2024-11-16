@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scinnova Countdown</title>
+    <title>Scinnova VIII</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -69,9 +69,9 @@
     
     <section id="modules">
         <div class="max-w-5xl mx-auto py-10">
-          <!-- Slider Section -->
+          
           <div class="flex flex-col md:flex-row items-center backdrop-blur shadow-lg rounded-lg overflow-hidden relative">
-            <!-- Descriptions Section -->
+            
             <div class="w-full md:w-1/2 p-6">
               <div id="slider" class="space-y-6">
                 <div class="description-item">
@@ -133,7 +133,7 @@
               </div>
             </div>
       
-            <!-- Image Section -->
+            
             <div class="w-full md:w-1/2 relative">
               <img
                 id="slider-image"
@@ -141,7 +141,7 @@
                 alt="Slide Image"
                 class="w-full h-72 object-cover"
               />
-              <!-- Navigation Arrows -->
+              
               <button
                 id="prev"
                 class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
@@ -166,14 +166,14 @@
           let currentSlide = 0;
       
           const images = [
-            "https://via.placeholder.com/600/111", // Robotics
-            "https://via.placeholder.com/600/222", // Mathematics
-            "https://via.placeholder.com/600/333", // Physics
-            "https://via.placeholder.com/600/444", // Arcanum
-            "https://via.placeholder.com/600/555", // Chemistry
-            "https://via.placeholder.com/600/666", // Biology
-            "https://via.placeholder.com/600/777", // Astronomy
-            "https://via.placeholder.com/600/888", // Psychology
+            "assets/automation.webp", // Robotics
+            "assets/ptolemy's puzzle.webp", // Mathematics
+            "assets/planck's paradox.webp", // Physics
+            "assets/arcanum.webp", // Arcanum
+            "assets/illuminatio.webp", // Chemistry
+            "assets/asclepius.webp", // Biology
+            "assets/redshift.webp", // Astronomy
+            "assets/freud's forsit.webp", // Psychology
           ];
       
           function updateSlider(index) {
@@ -295,7 +295,7 @@
     </script>
 
     <script>
-        let currentSlide = 0;
+        let currentslide = 0;
         const slides = document.querySelectorAll('.module-slide');
 
         function showSlide(index) {
@@ -319,4 +319,3 @@
     </script>
 </body>
 </html>
-
