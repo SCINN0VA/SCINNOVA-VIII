@@ -108,6 +108,7 @@ header {
   color: #ffffff;
   text-transform: uppercase;
 }
+
 button.learn-more {
   background: linear-gradient(90deg, #ffcc00, #ff6600); 
   color: white; 
@@ -541,7 +542,7 @@ footer a {
   }
 }
 
-
+  
 .text-shadow-lg {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
