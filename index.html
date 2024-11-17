@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  
+
   <header class="flex justify-between items-center">
     <div class="flex justify-center items-center backdrop-blur shadow-md fixed top-0 w-full z-10">
       <nav class="flex gap-1 p-3 backdrop-blur rounded-full mx-auto items-center">
@@ -37,37 +37,41 @@
   </header>
   
   
-  <section id="countdown" class="full-screen">
-        <div class="container">
-            <div class="content">
-                
-                <h1>We're <span>Launching</span> Soon</h1>
-                <div class="launch-time">
-                    <div>
-                        <p id="days">00</p>
-                        <span>Days</span>
-                    </div>
-                    <div>
-                        <p id="hours">00</p>
-                        <span>Hours</span>
-                    </div>
-                    <div>
-                        <p id="minutes">00</p>
-                        <span>Minutes</span>
-                    </div>
-                    <div>
-                        <p id="seconds">00</p>
-                        <span>Seconds</span>
-                    </div>
-                </div>
-                <button class="learn-more">
-                  <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
-                </button>
+<section id="countdown" class="full-screen">
+  <div class="container flex justify-center items-center flex-col text-center">
+    <div class="content">
+      <h1 class="text-shadow-lg">We're <span>Launching</span> Soon</h1>
 
-
-            </div>
+      <!-- Countdown timer -->
+      <div class="launch-time flex justify-center gap-4 mt-6">
+        <div>
+          <p id="days">00</p>
+          <span class="text-shadow-lg">Days</span>
         </div>
-    </section>
+        <div>
+          <p id="hours">00</p>
+          <span class="text-shadow-lg">Hours</span>
+        </div>
+        <div>
+          <p id="minutes">00</p>
+          <span class="text-shadow-lg">Minutes</span>
+        </div>
+        <div>
+          <p id="seconds">00</p>
+          <span class="text-shadow-lg">Seconds</span>
+        </div>
+      </div>
+
+      <!-- Register button -->
+      <div class="mt-8">
+        <button class="learn-more">
+          <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section id="about" class="full-screen-about-us">
         <div class="container-about">
