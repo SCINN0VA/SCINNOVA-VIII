@@ -19,6 +19,7 @@ header {
   left: 20px;
 }
 
+
 .logo {
   width: 60px;
 }
@@ -69,15 +70,18 @@ header {
   font-size: 18px;
   color: #ffffff;
 }
-
 .content h1 {
-  font-size: 40px;
-  color: #ffffff;
+  font-size: 35px; 
+  color: #FFD700; 
   margin: 20px 0;
+  font-weight: bolder; 
+  padding: 0px 10px; 
+  border-radius: 10px; 
+  
 }
 
 .content h1 span {
-  color: #d6b013;
+  color: #FFD700;
 }
 
 .launch-time {
@@ -95,7 +99,7 @@ header {
 
 .launch-time div p {
   font-size: 36px;
-  color: #d6b013;
+  color: #FFD700;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -105,21 +109,21 @@ header {
   text-transform: uppercase;
 }
 button.learn-more {
-  background: linear-gradient(90deg, #ffcc00, #ff6600); /* Gradient colors */
-  color: white; /* Text color */
-  font-family: Arial, sans-serif; /* Font style */
-  font-size: 16px; /* Font size */
-  padding: 10px 20px; /* Padding for button size */
-  border: none; /* No border */
-  border-radius: 20px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  text-transform: uppercase; /* Uppercase text */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
-  transition: transform 0.2s ease; /* Smooth scaling on hover */
+  background: linear-gradient(90deg, #ffcc00, #ff6600); 
+  color: white; 
+  font-family: Arial, sans-serif; 
+  font-size: 16px; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease; 
 }
 
 button.learn-more:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05); 
 }
 
 
@@ -141,7 +145,7 @@ button {
   background: linear-gradient(to right, #FFD700, #FF4500) !important;
 }
 button {
-  background: #FFD700; /* Fallback for browsers that don't support gradients */
+  background: #FFD700; 
   background: linear-gradient(to right, #FFD700, #FF4500);
 }
 
@@ -251,16 +255,16 @@ button:hover {
 
 .modules-container {
   display: flex;
-  flex-direction: column; /* Ensure items are stacked vertically */
-  justify-content: flex-start; /* Align to the top of the container */
-  align-items: flex-start; /* Align items to the left */
-  text-align: left; /* Make sure text is aligned to the left */
+  flex-direction: column; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  text-align: left; 
   width: 100%;
 }
 .module-slide {
   min-width: 100%;
   flex-shrink: 0;
-  text-align: justify; /* Justify the text */
+  text-align: justify; 
   opacity: 0;
   transition: opacity 0.5s ease;
   background-size: cover;
@@ -344,7 +348,6 @@ button:hover {
   text-align: right;
 }
 
-
 #organizers {
   position: relative;
   display: flex;
@@ -367,7 +370,7 @@ button:hover {
   color: #ffffff;
   max-width: 1000px;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.6); 
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   animation: fadeInUp 1s forwards;
 }
@@ -379,16 +382,24 @@ button:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
+.organizers-grid {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 60px; 
+}
+
 .organizer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
   padding: 15px;
-  background: rgba(255, 255, 255, 0.2); 
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
+  width: 250px; 
 }
 
 .organizer img {
@@ -414,11 +425,36 @@ button:hover {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  .organizers-grid {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .container-organizers {
+    padding: 20px;
+  }
+
+  #organizers h2 {
+    font-size: 30px;
+  }
+}
+
 
 
 #gallery {
-  padding: 50px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px, 0px;
+  min-height: 100vh;
   background-image: url('assets/starryhori.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  flex: wrap;
 }
 
 
@@ -452,16 +488,45 @@ button:hover {
   }
 }
 
-
 footer {
+  
   background-color: #0b0c10;
-  padding: 20px;
+  color: #ffffff;
+  padding: 20px 0;
   text-align: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 0; 
+}
+
+.footer-logo {
+  width: 100px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); 
+}
+
+.dot {
+  font-size: 40px; 
+  color: #ffffff; 
+  margin: 0 15px; 
 }
 
 footer p {
   color: #d6b013;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  padding-top: 20px; 
+}
+
+footer a {
+  text-decoration: none;
 }
 
 
@@ -475,4 +540,3 @@ footer p {
     transform: translateY(0);
   }
 }
-
