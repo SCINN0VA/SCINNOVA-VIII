@@ -9,9 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header class="flex justify-between items-center  ">
+  <header class="flex justify-between items-center">
     <div class="flex justify-center items-center backdrop-blur shadow-md fixed top-0 w-full z-10">
-      <nav class="flex gap-1 p-3  backdrop-blur rounded-full">
+      <div class="absolute left-0 p-3"> <!-- Added container for logo -->
+        <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
+      </div>
+      <nav class="flex gap-1 p-3 backdrop-blur rounded-full mx-auto"> <!-- Centered navigation -->
         <a href="#about" class="nav-item px-3 py-1 text-amber-300/80 hover:bg-gray-200/60 hover:text-gray-900 rounded-full">About</a>
         <a href="#modules" class="nav-item px-3 py-1 text-amber-300/80 hover:bg-gray-200/60 hover:text-gray-900 rounded-full">Modules</a>
         <a href="#testimonials" class="nav-item px-3 py-1 text-amber-300/80 hover:bg-gray-200/60 hover:text-gray-900 rounded-full">Testimonials</a>
@@ -21,6 +24,8 @@
       </nav>
     </div>
   </header>
+  
+  
   
 
 
