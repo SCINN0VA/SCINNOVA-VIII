@@ -3,8 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  
-  
 }
 
 body {
@@ -13,19 +11,12 @@ body {
   background-color: #0b0c10;
   scroll-behavior: smooth;
   opacity: 1;
-  overflow-x: hidden;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 header {
   position: absolute;
   top: 20px;
   left: 20px;
-  transform: translateX(0); /* Ensure it stays within bounds */
-  max-width: 100%; /* Prevent overflow */
-  overflow: hidden;
 }
 
 
@@ -482,7 +473,7 @@ button:hover {
   background-position: center;
   background-attachment: fixed;
   color: #ffffff;
-  overflow: hidden; 
+  overflow: hidden; /* Hide the scroll bars */
 }
 
 .gallery-container {
