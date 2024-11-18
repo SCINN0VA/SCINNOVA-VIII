@@ -490,11 +490,11 @@
   }
   
   footer {
-    
-    background-color: #0b0c10;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    font-size: 14px; 
+    color: #6c757d; 
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #070a15; 
   }
   
   .footer-logos {
@@ -520,17 +520,23 @@
     margin: 0 15px; 
   }
   
+
+  footer strong{
+    color: #d6b013;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 15px; 
+  }
+  
+  
   footer p {
     color: #d6b013;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    padding-top: 20px; 
+    padding-top: 15px; 
   }
   
   footer a {
     text-decoration: none;
   }
-  
-  
   @keyframes fadeInUp {
     0% {
       opacity: 0;
