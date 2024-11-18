@@ -1,6 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCINNOVA VIII</title>
@@ -10,348 +10,384 @@
 </head>
 <body>
 
+  <header class="flex justify-between items-center p-4 px-8 backdrop-blur shadow-md fixed top-0 w-full max-w-auto z-10">
 
-  <header class="flex justify-between items-center">
-    <div class="flex justify-center items-center backdrop-blur shadow-md fixed top-0 w-full z-10">
-      <nav class="flex gap-1 p-3 backdrop-blur rounded-full mx-auto items-center">
-        <!-- First three navigation links -->
-        <div class="flex">
-          <a href="#about" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">ABOUT</a>
-          <a href="#modules" class="nav-item px-3 py-1 text-amber-300/80  hover:text-white rounded-full">MODULES</a>
-          <a href="#testimonials" class="nav-item px-3 py-1 text-amber-300/80  hover:text-white rounded-full">TESTIMONIALS</a>
-        </div>
+    <!-- Logo for All Screens -->
+    <div class="flex items-center md:hidden lg:hidden">
+      <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
+    </div>
   
-        <!-- Logo -->
-        <div class="flex items-center mx-4">
-          <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
-        </div>
+    <!-- Navigation Menu for Medium and Large Screens -->
+    <nav class="hidden md:flex lg:flex gap-1 p-3 backdrop-blur rounded-full mx-auto items-center ">
+      <!-- First three navigation links -->
+      <div class="flex">
+        <a href="#about" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">ABOUT</a>
+        <a href="#modules" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">MODULES</a>
+        <a href="#testimonials" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">TESTIMONIALS</a>
+      </div>
   
-        <!-- Last three navigation links -->
-        <div class="flex">
-          <a href="#organizers" class="nav-item px-3 py-1 text-amber-300/80  hover:text-white rounded-full">ORGANIZERS</a>
-          <a href="#gallery" class="nav-item px-3 py-1 text-amber-300/80  hover:text-white rounded-full">GALLERY</a>
-          <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="nav-item px-3 py-1 text-amber-300  hover:text-white rounded-full">REGISTER</a>
-        </div>
-      </nav>
+      <!-- Center Logo -->
+      <div class="flex items-center mx-4">
+        <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
+      </div>
+  
+      <!-- Last three navigation links -->
+      <div class="flex">
+        <a href="#organizers" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">ORGANIZERS</a>
+        <a href="#gallery" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">GALLERY</a>
+        <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="nav-item px-3 py-1 text-amber-300 hover:text-white rounded-full">REGISTER</a>
+      </div>
+    </nav>
+  
+    <!-- Dropdown Menu for Small Screens -->
+    <div class="relative md:hidden">
+      <!-- Menu Toggle Button -->
+      <label for="menu-toggle" class="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg cursor-pointer">
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-amber-300">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </label>
+      <input id="menu-toggle" type="checkbox" class="hidden peer">
+      <div class="hidden peer-checked:block absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg">
+        <a href="#about" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">ABOUT</a>
+        <a href="#modules" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">MODULES</a>
+        <a href="#testimonials" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">TESTIMONIALS</a>
+        <a href="#organizers" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">ORGANIZERS</a>
+        <a href="#gallery" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">GALLERY</a>
+        <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="block px-4 py-2 bg-amber-500 text-gray-900 rounded-lg hover:bg-amber-600">REGISTER</a>
+      </div>
     </div>
   </header>
-  
-  
-<section id="countdown" class="full-screen">
-  <div class="container flex justify-center items-center flex-col text-center">
-    <div class="content">
-      <h1 class="text-shadow-lg">We're <span>Launching</span> Soon</h1>
 
-      <!-- Countdown timer -->
-      <div class="launch-time flex justify-center gap-4 mt-6">
-        <div>
-          <p id="days">00</p>
-          <span class="text-shadow-lg">Days</span>
-        </div>
-        <div>
-          <p id="hours">00</p>
-          <span class="text-shadow-lg">Hours</span>
-        </div>
-        <div>
-          <p id="minutes">00</p>
-          <span class="text-shadow-lg">Minutes</span>
-        </div>
-        <div>
-          <p id="seconds">00</p>
-          <span class="text-shadow-lg">Seconds</span>
+  
+  <section
+  id="countdown"
+  class="full-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center p-8";
+>
+<div class="content">
+  <div class="text-center">
+    <h1 class="text-shadow-lg">We're <span>Launching</span> Soon</h1>
+    <!-- Countdown timer -->
+    <div class="launch-time flex justify-center gap-4 mt-6">
+      <div>
+        <p id="days">00</p>
+        <span class="text-shadow-lg">Days</span>
+      </div>
+      <div>
+        <p id="hours">00</p>
+        <span class="text-shadow-lg">Hours</span>
+      </div>
+      <div>
+        <p id="minutes">00</p>
+        <span class="text-shadow-lg">Minutes</span>
+      </div>
+      <div>
+        <p id="seconds">00</p>
+        <span class="text-shadow-lg">Seconds</span>
+      </div>
+    </div>
+
+    <!-- Register button -->
+    <div class="mt-8">
+      <button class="learn-more">
+        <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
+      </button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="about" class="full-screen-about-us">
+  <div class="container-about">
+      <div class="about-overlay">
+          <div class="about-text">
+              
+              <h3>WHAT IS SCINNOVA?</h3>
+              <h4>Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
+              <p>Scinnova is Cedar College’s flagship science competition, designed to be more than just an academic challenge. It is an immersive learning experience that brings together 55 teams of budding scientists from across Karachi and Pakistan, with each team comprising 5-6 members aged 14-18. This year’s Scinnova consists of eight modules, each an intellectual arena representing a distinct field of science. Together, they showcase how a deep, interdisciplinary understanding of our world fosters true critical thinking, collaboration, and innovation.
+
+              With two competitive rounds in each module, students face three hours of intensive engagement per module, plus an hour dedicated to setup, briefing, scoring, and preparation. Scinnova is an arena for future problem-solvers, where hands-on challenges lead students to push beyond textbook knowledge, cultivating teamwork and critical reasoning.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="modules">
+
+  <div class="max-w-5xl mx-auto py-10">
+    
+    <div class="flex flex-col md:flex-row items-center backdrop-blur shadow-lg rounded-lg overflow-hidden relative">
+      
+      <div class="w-full md:w-1/2 p-6">
+        <div id="slider" class="space-y-6">
+          <div class="description-item">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Robotics</h2>
+            <h3 class="text-2xl text-white">Automation</h3>
+            <p class="text-white/70 mt-2">
+              In the Automaton module, students dive into robotics, applying engineering principles, physics, and coding skills to design and program functional robots. Participants collaborate to solve specific tasks, fostering an understanding of mechanics, control systems, and problem-solving through real-time testing and modification. Students learn how mechanical systems and computer algorithms can harmonize, illustrating the interdisciplinary nature of engineering.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Mathematics</h2>
+            <h3 class="text-2xl text-white">Ptolemy's Puzzle</h3>
+            <p class="text-white/70 mt-2">
+              Named after the renowned mathematician Ptolemy, this module involves complex problem-solving, mathematical modeling, and logical puzzles. Students apply algebra, geometry, and calculus to solve theoretical and practical challenges, fostering a deep understanding of mathematical principles. Ptolemy’s Puzzle emphasizes the universality of mathematics, showing how it underpins all scientific disciplines and helps us decode the world.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Physics</h2>
+            <h3 class="text-2xl text-white">Planck's Paradox</h3>
+            <p class="text-white/70 mt-2">
+              Planck’s Paradox brings theoretical physics to life by guiding students through paradoxes and scenarios where common sense meets scientific complexity. From exploring quantum mechanics to relativistic principles, students grapple with concepts that stretch their critical thinking. This module develops reasoning and analytical skills, teaching students that physics is not merely formulaic but a way to interpret reality, bridging abstract theory with logical problem-solving.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Crime and Cryptography</h2>
+            <h3 class="text-2xl text-white">Arcanum</h3>
+            <p class="text-white/70 mt-2">
+              Arcanum introduces students to the intersection of science and mystery. Using forensic science, data encryption, and logic puzzles, teams tackle scenarios involving cryptographic challenges and crime scene analysis. This module develops analytical and deductive reasoning skills, teaching students the applications of mathematics, logic, and technology in solving real-world puzzles and uncovering hidden patterns.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Chemistry</h2>
+            <h3 class="text-2xl text-white">Illuminatio</h3>
+            <p class="text-white/70 mt-2">
+              In Illuminatio, students engage in hands-on experiments, delving into the composition and transformation of matter. Teams conduct experiments that reveal chemical reactions, molecular structures, and energy dynamics. This module emphasizes safety protocols, attention to detail, and the scientific method. Students learn the powerful role chemistry plays across fields, from healthcare to environmental science, gaining insights into how elements and compounds are central to life.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Biology</h2>
+            <h3 class="text-2xl text-white">Asclepius</h3>
+            <p class="text-white/70 mt-2">
+              Named after the Greek god of medicine, Asclepius offers students a journey into the life sciences. Through dissections, genetic analysis, and simulations of biological processes, participants experience the complexity of living organisms. This module fosters respect for life and an understanding of biology’s role in medicine, genetics, and ecology, encouraging students to think critically about ethical and scientific issues that impact our world.
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Astronomy</h2>
+            <h3 class="text-2xl text-white">Redshift</h3>
+            <p class="text-white/70 mt-2">
+              Redshift immerses students in the mysteries of space, challenging them to explore concepts of astrophysics and cosmology. Teams use telescopic data, star maps, and astrophysical simulations to investigate celestial phenomena. The module nurtures observational skills and scientific reasoning, encouraging students to draw connections between abstract physics theories and tangible data from the universe, thus understanding our cosmic neighborhood in a holistic manner.
+            </p>
+          </div>
+          <div class="description-item hidden">
+            <h2 class="text-2xl font-bold text-[#FFD700]">Psychology</h2>
+            <h3 class="text-2xl text-white">Freud's Foresit</h3>
+            <p class="text-white/70 mt-2">
+              This module encourages students to enter the fascinating field of psychology, focusing on human behavior and cognitive functions. Through experimental tasks, role-playing, and group scenarios, students study psychological theories and apply them to real-life settings. Freud’s Foresit reinforces the importance of understanding human interactions, fostering empathy, and exploring the human mind. This module reminds students that scientific inquiry extends beyond physical phenomena to include the intricacies of human nature.
+            </p>
+          </div>
         </div>
       </div>
 
-      <!-- Register button -->
-      <div class="mt-8">
-        <button class="learn-more">
-          <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
+      
+      <div class="w-full md:w-1/2 relative">
+        <img
+          id="slider-image"
+          src="https://via.placeholder.com/600"
+          alt="Slide Image"
+          class="w-full h-72 object-cover"
+        />
+        
+        <button
+          id="prev"
+          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
+        >
+          &#8592;
+        </button>
+        <button
+          id="next"
+          class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
+        >
+          &#8594;
         </button>
       </div>
     </div>
   </div>
+
+  <script>
+    const descriptions = document.querySelectorAll('.description-item');
+    const sliderImage = document.getElementById('slider-image');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentSlide = 0;
+
+    const images = [
+      "assets/1.webp", // Robotics
+      "assets/2.webp", // Mathematics
+      "assets/3.webp", // Physics
+      "assets/4.webp", // Arcanum
+      "assets/5.webp", // Chemistry
+      "assets/6.webp", // Biology
+      "assets/7.webp", // Astronomy
+      "assets/8.webp", // Psychology
+    ];
+
+    function updateSlider(index) {
+      descriptions.forEach((desc, i) => {
+        desc.classList.toggle('hidden', i !== index);
+      });
+      sliderImage.src = images[index];
+    }
+
+    prevButton.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + descriptions.length) % descriptions.length;
+      updateSlider(currentSlide);
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % descriptions.length;
+      updateSlider(currentSlide);
+    });
+
+    updateSlider(currentSlide);
+  </script>
 </section>
 
 
-    <section id="about" class="full-screen-about-us">
-        <div class="container-about">
-            <div class="about-overlay">
-                <div class="about-text">
-                    
-                    <h3>WHAT IS SCINNOVA?</h3>
-                    <h4>Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
-                    <p>Scinnova is Cedar College’s flagship science competition, designed to be more than just an academic challenge. It is an immersive learning experience that brings together 55 teams of budding scientists from across Karachi and Pakistan, with each team comprising 5-6 members aged 14-18. This year’s Scinnova consists of eight modules, each an intellectual arena representing a distinct field of science. Together, they showcase how a deep, interdisciplinary understanding of our world fosters true critical thinking, collaboration, and innovation.
-
-                    With two competitive rounds in each module, students face three hours of intensive engagement per module, plus an hour dedicated to setup, briefing, scoring, and preparation. Scinnova is an arena for future problem-solvers, where hands-on challenges lead students to push beyond textbook knowledge, cultivating teamwork and critical reasoning.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="modules">
-      
-        <div class="max-w-5xl mx-auto py-10">
-          
-          <div class="flex flex-col md:flex-row items-center backdrop-blur shadow-lg rounded-lg overflow-hidden relative">
-            
-            <div class="w-full md:w-1/2 p-6">
-              <div id="slider" class="space-y-6">
-                <div class="description-item">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Robotics</h2>
-                  <h3 class="text-2xl text-white">Automation</h3>
-                  <p class="text-white/70 mt-2">
-                    In the Automaton module, students dive into robotics, applying engineering principles, physics, and coding skills to design and program functional robots. Participants collaborate to solve specific tasks, fostering an understanding of mechanics, control systems, and problem-solving through real-time testing and modification. Students learn how mechanical systems and computer algorithms can harmonize, illustrating the interdisciplinary nature of engineering.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Mathematics</h2>
-                  <h3 class="text-2xl text-white">Ptolemy's Puzzle</h3>
-                  <p class="text-white/70 mt-2">
-                    Named after the renowned mathematician Ptolemy, this module involves complex problem-solving, mathematical modeling, and logical puzzles. Students apply algebra, geometry, and calculus to solve theoretical and practical challenges, fostering a deep understanding of mathematical principles. Ptolemy’s Puzzle emphasizes the universality of mathematics, showing how it underpins all scientific disciplines and helps us decode the world.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Physics</h2>
-                  <h3 class="text-2xl text-white">Planck's Paradox</h3>
-                  <p class="text-white/70 mt-2">
-                    Planck’s Paradox brings theoretical physics to life by guiding students through paradoxes and scenarios where common sense meets scientific complexity. From exploring quantum mechanics to relativistic principles, students grapple with concepts that stretch their critical thinking. This module develops reasoning and analytical skills, teaching students that physics is not merely formulaic but a way to interpret reality, bridging abstract theory with logical problem-solving.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Crime and Cryptography</h2>
-                  <h3 class="text-2xl text-white">Arcanum</h3>
-                  <p class="text-white/70 mt-2">
-                    Arcanum introduces students to the intersection of science and mystery. Using forensic science, data encryption, and logic puzzles, teams tackle scenarios involving cryptographic challenges and crime scene analysis. This module develops analytical and deductive reasoning skills, teaching students the applications of mathematics, logic, and technology in solving real-world puzzles and uncovering hidden patterns.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Chemistry</h2>
-                  <h3 class="text-2xl text-white">Illuminatio</h3>
-                  <p class="text-white/70 mt-2">
-                    In Illuminatio, students engage in hands-on experiments, delving into the composition and transformation of matter. Teams conduct experiments that reveal chemical reactions, molecular structures, and energy dynamics. This module emphasizes safety protocols, attention to detail, and the scientific method. Students learn the powerful role chemistry plays across fields, from healthcare to environmental science, gaining insights into how elements and compounds are central to life.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Biology</h2>
-                  <h3 class="text-2xl text-white">Asclepius</h3>
-                  <p class="text-white/70 mt-2">
-                    Named after the Greek god of medicine, Asclepius offers students a journey into the life sciences. Through dissections, genetic analysis, and simulations of biological processes, participants experience the complexity of living organisms. This module fosters respect for life and an understanding of biology’s role in medicine, genetics, and ecology, encouraging students to think critically about ethical and scientific issues that impact our world.
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Astronomy</h2>
-                  <h3 class="text-2xl text-white">Redshift</h3>
-                  <p class="text-white/70 mt-2">
-                    Redshift immerses students in the mysteries of space, challenging them to explore concepts of astrophysics and cosmology. Teams use telescopic data, star maps, and astrophysical simulations to investigate celestial phenomena. The module nurtures observational skills and scientific reasoning, encouraging students to draw connections between abstract physics theories and tangible data from the universe, thus understanding our cosmic neighborhood in a holistic manner.
-                  </p>
-                </div>
-                <div class="description-item hidden">
-                  <h2 class="text-2xl font-bold text-[#FFD700]">Psychology</h2>
-                  <h3 class="text-2xl text-white">Freud's Foresit</h3>
-                  <p class="text-white/70 mt-2">
-                    This module encourages students to enter the fascinating field of psychology, focusing on human behavior and cognitive functions. Through experimental tasks, role-playing, and group scenarios, students study psychological theories and apply them to real-life settings. Freud’s Foresit reinforces the importance of understanding human interactions, fostering empathy, and exploring the human mind. This module reminds students that scientific inquiry extends beyond physical phenomena to include the intricacies of human nature.
-                  </p>
-                </div>
-              </div>
-            </div>
-      
-            
-            <div class="w-full md:w-1/2 relative">
-              <img
-                id="slider-image"
-                src="https://via.placeholder.com/600"
-                alt="Slide Image"
-                class="w-full h-72 object-cover"
-              />
-              
-              <button
-                id="prev"
-                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
-              >
-                &#8592;
-              </button>
-              <button
-                id="next"
-                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
-              >
-                &#8594;
-              </button>
-            </div>
-          </div>
-        </div>
-      
-        <script>
-          const descriptions = document.querySelectorAll('.description-item');
-          const sliderImage = document.getElementById('slider-image');
-          const prevButton = document.getElementById('prev');
-          const nextButton = document.getElementById('next');
-          let currentSlide = 0;
-      
-          const images = [
-            "assets/1.webp", // Robotics
-            "assets/2.webp", // Mathematics
-            "assets/3.webp", // Physics
-            "assets/4.webp", // Arcanum
-            "assets/5.webp", // Chemistry
-            "assets/6.webp", // Biology
-            "assets/7.webp", // Astronomy
-            "assets/8.webp", // Psychology
-          ];
-      
-          function updateSlider(index) {
-            descriptions.forEach((desc, i) => {
-              desc.classList.toggle('hidden', i !== index);
-            });
-            sliderImage.src = images[index];
-          }
-      
-          prevButton.addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + descriptions.length) % descriptions.length;
-            updateSlider(currentSlide);
-          });
-      
-          nextButton.addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % descriptions.length;
-            updateSlider(currentSlide);
-          });
-      
-          updateSlider(currentSlide);
-        </script>
-      </section>
-      
-  
-       
-    <section id="testimonials">
-        <div class="container-testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"As the chief guest of SCINNOVA III, I was truly impressed by the exceptional planning and execution demonstrated by both the organizing team and the participants. SCINNOVA showcases where outstanding creativity meets exemplary execution, highlighting the remarkable potential of today’s youth."</p>
-                <h4>- Pervez Hoodbhoy</h4>
-            </div>
-            <div class="testimonial">
-                <p>"SCINNOVA is one of those rare experiences that you feel proud to be a part of. It’s reassuring to know there is a forum where fun-loving and curious minds are nurtured to better understand how to integrate real-world problems with their knowledge and available tools. A true marvel in its execution, SCINNOVA represents the immense potential of this generation."</p>
-                <h4>- Dr. Athar Osama</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Having attended SCINNOVA last year, I was inspired by the passion and dedication of the participants and organizing team. This event nurtures innovative thinking and problem-solving skills. The commitment to excellence highlights the impressive capabilities of our youth and lays the groundwork for a future where science and creativity thrive. SCINNOVA is a testament to the potential of the next generation of innovators."</p>
-                <h4>- Dr. Sabieh Anwar</h4>
-            </div>
-            <div class="testimonial">
-                <p>"SCINNOVA has been a journey of both challenges and triumphs. We’ve experienced the full spectrum of burnout and success through countless hours of dedicated work. Each year, we surpass our previous achievements, continuously striving to offer every young mind an opportunity to excel in the field of STEM."</p>
-                <h4>- Ruhab Iqbal</h4>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    
-    <section id="organizers">
-        <div class="container-organizers">
-            <h2>Meet the Organizers</h2>
-            <div class="organizers-grid">
-                <div class="organizer">
-                    <img src="assets/sir roque.webp" alt="Roque Martin D.Mello">
-                    <h4>Roque Martin D.Mello</h4>
-                    <p class="role">Director</p>
-                    <blockquote>"Every single piece of information is important."</blockquote>
-                </div>
-                <div class="organizer">
-                    <img src="assets/sir husham.webp" alt="Dr Husham Arshad">
-                    <h4>Dr Husham Arshad</h4>
-                    <p class="role">Co-Director</p>
-                    <blockquote>"You just need to listen to the inner voices."</blockquote>
-                </div>
-                <div class="organizer">
-                    <img src="assets/sir humayun.webp" alt="Humayun Saleem">
-                    <h4>Humayun Saleem</h4>
-                    <p class="role">Patron</p>
-                    <blockquote>"Skills can enhance once interest is developed."</blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-    
  
-
-    <section id="gallery">
-        <div class="gallery-container">
-            <div class="gallery-item" style="background-image: url('assets/chem2.webp');"></div>
-            <div class="gallery-item" style="background-image: url('assets/phys3.webp');"></div>
-            <div class="gallery-item" style="background-image: url('assets/trophy.webp');"></div>
-            <div class="gallery-item" style="background-image: url('assets/bio4\ \(1\).webp');"></div>
-            <div class="gallery-item" style="background-image: url('assets/people.webp');"></div>
-            
-        </div>
-    </section>
-    
-  
-    
-    <footer id="contact">
-      <div class="footer-logos">
-          <img src="assets/Crew_Logo_black_and_white.webp" alt="Logo 1" class="footer-logo">
-          <span class="dot">⦁</span>
-          <img src="assets/CoRDS_White_logo_new.webp" alt="Logo 2" class="footer-logo">
-          <span class="dot">⦁</span>
-          <img src="assets/The_Juno_Circle_Logo_White.webp" alt="Logo 3" class="footer-logo">
+<section id="testimonials">
+  <div class="container-testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+          <p>"As the chief guest of SCINNOVA III, I was truly impressed by the exceptional planning and execution demonstrated by both the organizing team and the participants. SCINNOVA showcases where outstanding creativity meets exemplary execution, highlighting the remarkable potential of today’s youth."</p>
+          <h4>- Pervez Hoodbhoy</h4>
       </div>
-      <p>Contact us at: info@scinnova.com | reg.scinnova@cedar.edu.pk</p>
-   </footer>
-  
+      <div class="testimonial">
+          <p>"SCINNOVA is one of those rare experiences that you feel proud to be a part of. It’s reassuring to know there is a forum where fun-loving and curious minds are nurtured to better understand how to integrate real-world problems with their knowledge and available tools. A true marvel in its execution, SCINNOVA represents the immense potential of this generation."</p>
+          <h4>- Dr. Athar Osama</h4>
+      </div>
+      <div class="testimonial">
+          <p>"Having attended SCINNOVA last year, I was inspired by the passion and dedication of the participants and organizing team. This event nurtures innovative thinking and problem-solving skills. The commitment to excellence highlights the impressive capabilities of our youth and lays the groundwork for a future where science and creativity thrive. SCINNOVA is a testament to the potential of the next generation of innovators."</p>
+          <h4>- Dr. Sabieh Anwar</h4>
+      </div>
+      <div class="testimonial">
+          <p>"SCINNOVA has been a journey of both challenges and triumphs. We’ve experienced the full spectrum of burnout and success through countless hours of dedicated work. Each year, we surpass our previous achievements, continuously striving to offer every young mind an opportunity to excel in the field of STEM."</p>
+          <h4>- Ruhab Iqbal</h4>
+      </div>
+  </div>
+  </div>
+</section>
 
-    <script>
-      var countDownDate = new Date("Jan 17, 2025 00:00:00").getTime();
-        var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+<section id="organizers">
+  <div class="container-organizers">
+      <h2>Meet the Organizers</h2>
+      <div class="organizers-grid">
+          <div class="organizer">
+              <img src="assets/sir roque.webp" alt="Roque Martin D.Mello">
+              <h4>Roque Martin D.Mello</h4>
+              <p class="role">Director</p>
+              <blockquote>"Every single piece of information is important."</blockquote>
+          </div>
+          <div class="organizer">
+              <img src="assets/sir husham.webp" alt="Dr Husham Arshad">
+              <h4>Dr Husham Arshad</h4>
+              <p class="role">Co-Director</p>
+              <blockquote>"You just need to listen to the inner voices."</blockquote>
+          </div>
+          <div class="organizer">
+              <img src="assets/sir humayun.webp" alt="Humayun Saleem">
+              <h4>Humayun Saleem</h4>
+              <p class="role">Patron</p>
+              <blockquote>"Skills can enhance once interest is developed."</blockquote>
+          </div>
+      </div>
+  </div>
+</section>
 
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("minutes").innerHTML = minutes;
-        document.getElementById("seconds").innerHTML = seconds;
 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("days").innerHTML = "00";
-            document.getElementById("hours").innerHTML = "00";
-            document.getElementById("minutes").innerHTML = "00";
-            document.getElementById("seconds").innerHTML = "00";
-        }
-          }, 1000);
 
-    </script>
+<section id="gallery">
+    <div class="gallery-container">
+        <div class="gallery-item" style="background-image: url('assets/chem2.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/phys3.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/trophy.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/bio4(1).webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/people.webp');"></div>
+        <!-- Duplicate images to ensure seamless loop -->
+        <div class="gallery-item" style="background-image: url('assets/chem2.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/phys3.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/trophy.webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/bio4(1).webp');"></div>
+        <div class="gallery-item" style="background-image: url('assets/people.webp');"></div>
+  </div>
+</section>
 
-    <script>
-        let currentslide = 0;
-        const slides = document.querySelectorAll('.module-slide');
 
-        function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? '1' : '0';
-        });
-        }
 
-        function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
-        }
 
-        function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-        }
 
-        showSlide(currentSlide);
 
-    </script>
-    <footer style="background-color: #070a15; padding: 10px; text-align: center; font-size: 14px; color: white;">
-      Made by <strong>Eeman Khalid</strong> and <strong>Muzaina Munir</strong>
-    </footer>
+    
   
     
-    
+<footer id="contact">
+  <div class="footer-logos">
+      <img src="assets/Crew_Logo_black_and_white.webp" alt="Logo 1" class="footer-logo">
+      <span class="dot">⦁</span>
+      <img src="assets/CoRDS_White_logo_new.webp" alt="Logo 2" class="footer-logo">
+      <span class="dot">⦁</span>
+      <img src="assets/The_Juno_Circle_Logo_White.webp" alt="Logo 3" class="footer-logo">
+  </div>
+  <p>Contact us at: info@scinnova.com | reg.scinnova@cedar.edu.pk</p>
+</footer>
+
+
+<script>
+  var countDownDate = new Date("Jan 17, 2025 00:00:00").getTime();
+    var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+    }
+      }, 1000);
+
+</script>
+
+<script>
+    let currentslide = 0;
+    const slides = document.querySelectorAll('.module-slide');
+
+    function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? '1' : '0';
+    });
+    }
+
+    function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+
+</script>
+<footer style="background-color: #070a15; padding: 10px; text-align: center; font-size: 14px; color: white;">
+
+</footer>
+
+
+
 </body>
 </html>
