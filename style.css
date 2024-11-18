@@ -1,679 +1,548 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body {
-  color: #ffffff;
-  background-image: url('assets/starryhori.webp');
-  background-color: #0b0c10;
-  scroll-behavior: smooth;
-  opacity: 1;
-}
-
-header {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-
-.logo {
-  width: 60px;
-}
-
-.top-right-nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  gap: 20px;
-}
-
-.top-right-nav a {
-  color: #d6b013; 
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s, border-bottom 0.3s;
-  padding-bottom: 5px;
-}
-
-.top-right-nav a:hover {
-  color: #ffffff; 
-  border-bottom: 2px solid #d6b013;
-}
-@media (max-width: 1024px) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    color: #ffffff;
+    background-image: url('assets/starryhori.webp');
+    background-color: #0b0c10;
+    scroll-behavior: smooth;
+    opacity: 1;
+  }
+  
   header {
-    top: 10px;
-    left: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
-
+  
+  
   .logo {
-    width: 50px;
+    width: 60px;
   }
-
+  
   .top-right-nav {
-    top: 10px;
-    right: 10px;
-    gap: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
   }
-
+  
   .top-right-nav a {
-    font-size: 14px;
+    color: #d6b013; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
   }
-}
-
-.full-screen {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-image: url('assets/moon.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  max-width: 800px;
-  animation: fadeInUp 1s forwards;
-}
-
-.content p {
-  font-size: 18px;
-  color: #ffffff;
-}
-.content h1 {
-  font-size: 35px; 
-  color: #FFD700; 
-  margin: 20px 0;
-  font-weight: bolder; 
-  padding: 0px 10px; 
-  border-radius: 10px; 
   
-}
-
-.content h1 span {
-  color: #FFD700;
-}
-
-.launch-time {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.launch-time div {
-  text-align: center;
-  margin: 0 10px;
-}
-
-.launch-time div p {
-  font-size: 36px;
-  color: #FFD700;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-.launch-time span {
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-@media (max-width: 768px) {
+  .top-right-nav a:hover {
+    color: #ffffff; 
+    border-bottom: 2px solid #d6b013;
+  }
+  
   .full-screen {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('assets/moon.webp');
+    background-size: cover;
+    background-position: center;
   }
-
-  .container {
-    max-width: 100%;
-    padding: 0 15px;
-  }
-
-  .content h1 {
-    font-size: 30px;
-  }
-
-  .content p {
-    font-size: 16px;
-  }
-
-  .launch-time div p {
-    font-size: 30px;
-  }
-}
-button.learn-more {
-  background: linear-gradient(90deg, #ffcc00, #ff6600); 
-  color: white; 
-  font-family: Arial, sans-serif; 
-  font-size: 16px; 
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 20px; 
-  cursor: pointer; 
-  text-transform: uppercase;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.2s ease; 
-}
-
-button.learn-more:hover {
-  transform: scale(1.05); 
-}
-
-
-button {
   
-  background: linear-gradient(to right, #FFD700, #FF4500);
-  background: -webkit-linear-gradient(to right, #FFD700, #FF4500);
-  background: -moz-linear-gradient(to right, #FFD700, #FF4500);
-  background: linear-gradient(to right, #FFD700, #FF4500);
-  color: #333;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-button {
-  background: linear-gradient(to right, #FFD700, #FF4500) !important;
-}
-button {
-  background: #FFD700; 
-  background: linear-gradient(to right, #FFD700, #FF4500);
-}
-
-
-button:hover {
-  box-shadow: 0 4px 8px rgba(255, 69, 0, 0.5);
-}
-
-#about {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  min-height: 100vh;
-  background-image: url('assets/starryhori.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #ffffff;
-}
-
-
-.container-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  max-width: 800px;
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.5); 
-  border-radius: 8px;
-  animation: fadeInUp 1s forwards;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-
-
-#about h3 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-#about h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #d6b013;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-#about p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #f0f0f0;
-  text-align: justify;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 768px) {
-  #about h2 {
-    font-size: 32px;
-  }
-
-  #about h3 {
-    font-size: 24px;
-  }
-
-  #about h4 {
-    font-size: 18px;
-  }
-
-  #about p {
-    font-size: 14px;
-  }
-
-  .container-about {
-    padding: 20px;
-  }
-}
-#modules {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  min-height: 100vh;
-  background-image: url('assets/starryhori.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #ffffff;
-  justify-content: center;
-}
-#modules .modules-heading {
-  font-size: 36px;
-  font-weight: bold;
-  color: #d6b013;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.modules-container {
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  text-align: left; 
-  width: 100%;
-}
-.module-slide {
-  min-width: 100%;
-  flex-shrink: 0;
-  text-align: justify; 
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  background-size: cover;
-  background-position: center;
-}
-
-
-.module-slide.active {
-  opacity: 1; 
-}
-
-
-.nav-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  border: none;
-}
-
-.left-arrow {
-  left: 20px;
-}
-
-.right-arrow {
-  right: 20px;
-}
-@media (max-width: 768px) {
-  #modules .modules-heading {
-    font-size: 28px;
-  }
-
-  .modules-container {
-    width: 100%;
-  }
-
-  .module-slide {
-    min-width: 100%;
-  }
-
-  .nav-arrow {
-    font-size: 18px;
-  }
-}
-
-#testimonials {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  min-height: 100vh;
-  background-image: url('assets/starryhori.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #ffffff;
-}
-
-.container-testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  max-width: 800px;
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.5); 
-  border-radius: 8px;
-  animation: fadeInUp 1s forwards;
-}
-
-#testimonials h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #d6b013;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.testimonial {
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #f0f0f0;
-  text-align: justify;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.testimonial h4 {
-  margin-top: 15px;
-  font-size: 18px;
-  color: #d6b013;
-  text-align: right;
-}
-
-@media (max-width: 768px) {
-  #testimonials h2 {
-    font-size: 32px;
-  }
-
-  .container-testimonials {
-    padding: 20px;
-  }
-
-  .testimonial {
-    font-size: 14px;
-  }
-
-  .testimonial h4 {
-    font-size: 16px;
-  }
-}
-#organizers {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  min-height: 100vh;
-  background-image: url('assets/starryhori.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #ffffff;
-}
-
-.container-organizers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  max-width: 1000px;
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  animation: fadeInUp 1s forwards;
-}
-
-#organizers h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: #d6b013;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-.organizers-grid {
-  display: flex;
-  flex-direction: row; 
-  justify-content: center; 
-  flex-wrap: wrap; 
-  gap: 60px; 
-}
-
-.organizer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 250px; 
-}
-
-.organizer img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 15px;
-  border: 3px solid #d6b013;
-}
-
-.organizer h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #d6b013;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.organizer p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #f0f0f0;
-  text-align: justify;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 768px) {
-  #organizers h2 {
-    font-size: 32px;
-  }
-
-  .organizers-grid {
+  .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    animation: fadeInUp 1s forwards;
   }
-
-  .organizer {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .organizer img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .organizer h4 {
-    font-size: 16px;
-  }
-
-  .organizer p {
-    font-size: 14px;
-  }
-}
-
-
-#gallery {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px, 0px;
-  min-height: 100vh;
-  background-image: url('assets/starryhori.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #ffffff;
-  flex: wrap;
-}
-
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.gallery-item {
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  border-radius: 8px;
-  position: relative;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.gallery-item:hover {
-  transform: scale(1.05);
-}
-
-
-@media (max-width: 768px) {
-  .gallery-container {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-
-  .gallery-item {
-    height: 200px;
-  }
-}
-
-@media (max-width: 480px) {
-  .gallery-container {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
-
-
-footer {
-  font-size: 14px; 
-  color: #6c757d; 
-  text-align: center; 
-  padding: 10px 0; 
-  background-color: #070a15; 
-}
-
-
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  gap: 0; 
-}
-
-.footer-logo {
-  width: 100px; 
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-}
-
-.footer-logo:hover {
-  transform: scale(1.1); 
-}
-
-.dot {
-  font-size: 40px; 
-  color: #ffffff; 
-  margin: 0 15px; 
-}
-
-footer strong{
-  color: #d6b013;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-  padding-top: 15px; 
-}
-
-
-footer p {
-  color: #d6b013;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-  padding-top: 15px; 
-}
-
-footer a {
-  text-decoration: none;
-}
-@media (max-width: 768px) {
-  footer {
-    font-size: 12px;
-    padding: 20px 0;
-  }
-
-  .footer-logos {
-    gap: 10px;
-  }
-
-  .footer-logo {
-    width: 70px;
-  }
-
-  .dot {
-    font-size: 24px;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
   
-.text-shadow-lg {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
+  .content p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .content h1 {
+    font-size: 35px; 
+    color: #FFD700; 
+    margin: 20px 0;
+    font-weight: bolder; 
+    padding: 0px 10px; 
+    border-radius: 10px; 
+    
+  }
+  
+  .content h1 span {
+    color: #FFD700;
+  }
+  
+  .launch-time {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .launch-time div {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .launch-time div p {
+    font-size: 36px;
+    color: #FFD700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .launch-time span {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  button.learn-more {
+    background: linear-gradient(90deg, #ffcc00, #ff6600); 
+    color: white; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease; 
+  }
+  
+  button.learn-more:hover {
+    transform: scale(1.05); 
+  }
+  
+  
+  button {
+    
+    background: linear-gradient(to right, #FFD700, #FF4500);
+    background: -webkit-linear-gradient(to right, #FFD700, #FF4500);
+    background: -moz-linear-gradient(to right, #FFD700, #FF4500);
+    background: linear-gradient(to right, #FFD700, #FF4500);
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  button {
+    background: linear-gradient(to right, #FFD700, #FF4500) !important;
+  }
+  button {
+    background: #FFD700; 
+    background: linear-gradient(to right, #FFD700, #FF4500);
+  }
+  
+  
+  button:hover {
+    box-shadow: 0 4px 8px rgba(255, 69, 0, 0.5);
+  }
+  
+  #about {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url('assets/starryhori.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+  }
+  
+  
+  .container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  
+  #about h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #about h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #d6b013;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  #about p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    #about h2 {
+      font-size: 32px;
+    }
+    #about h3 {
+      font-size: 24px;
+    }
+    #about h4 {
+      font-size: 18px;
+    }
+    #about p {
+      font-size: 14px;
+    }
+  }
+  
+  #modules {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url('assets/starryhori.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    justify-content: center;
+  }
+  #modules .modules-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d6b013;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .modules-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    text-align: left; 
+    width: 100%;
+  }
+  .module-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    text-align: justify; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .module-slide.active {
+    opacity: 1; 
+  }
+  
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border: none;
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
+  
+  #testimonials {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url('assets/starryhori.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+  }
+  
+  .container-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  #testimonials h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #d6b013;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .testimonial {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .testimonial h4 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #d6b013;
+    text-align: right;
+  }
+  
+  #organizers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url('assets/starryhori.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+  }
+  
+  .container-organizers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 1000px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  #organizers h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #d6b013;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .organizers-grid {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 60px; 
+  }
+  
+  .organizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px; 
+  }
+  
+  .organizer img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 3px solid #d6b013;
+  }
+  
+  .organizer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #d6b013;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .organizer p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 768px) {
+    .organizers-grid {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .container-organizers {
+      padding: 20px;
+    }
+  
+    #organizers h2 {
+      font-size: 30px;
+    }
+  }
+  
+  
+  
+  #gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px, 0px;
+    min-height: 100vh;
+    background-image: url('assets/starryhori.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    flex: wrap;
+  }
+  
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-item {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
+  
+  footer {
+    
+    background-color: #0b0c10;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 0; 
+  }
+  
+  .footer-logo {
+    width: 100px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1); 
+  }
+  
+  .dot {
+    font-size: 40px; 
+    color: #ffffff; 
+    margin: 0 15px; 
+  }
+  
+  footer p {
+    color: #d6b013;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    padding-top: 20px; 
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+    
+  .text-shadow-lg {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
