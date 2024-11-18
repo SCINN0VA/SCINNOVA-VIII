@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   
+  
 }
 
 body {
@@ -12,7 +13,10 @@ body {
   background-color: #0b0c10;
   scroll-behavior: smooth;
   opacity: 1;
-  
+  overflow-x: hidden;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -478,7 +482,7 @@ button:hover {
   background-position: center;
   background-attachment: fixed;
   color: #ffffff;
-  overflow: hidden; /* Hide the scroll bars */
+  overflow: hidden; 
 }
 
 .gallery-container {
