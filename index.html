@@ -14,7 +14,7 @@
 
     <!-- Logo for All Screens -->
     <div class="flex items-center md:hidden lg:hidden">
-      <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
+      <img src="assets/Scinnova VII Logo white.webp" class="logo" alt="Scinnova Logo">
     </div>
   
     <!-- Navigation Menu for Medium and Large Screens -->
@@ -28,7 +28,8 @@
   
       <!-- Center Logo -->
       <div class="flex items-center mx-4">
-        <img src="assets/Scinnova VII Logo white.webp" class="logo h-12" alt="Scinnova Logo">
+        <img src="assets/Scinnova VII Logo white.webp" class="logo" alt="Scinnova Logo">
+
       </div>
   
       <!-- Last three navigation links -->
@@ -42,28 +43,30 @@
     <!-- Dropdown Menu for Small Screens -->
     <div class="relative md:hidden">
       <!-- Menu Toggle Button -->
-      <label for="menu-toggle" class="flex items-center gap-2 px-4 py-2 bg-gray-700 rounded-lg cursor-pointer">
+      <label for="menu-toggle" class="flex items-center gap-2 px-4 py-2 rounded-lg cursor-pointer">
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-amber-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-white">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </label>
       <input id="menu-toggle" type="checkbox" class="hidden peer">
-      <div class="hidden peer-checked:block absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg">
-        <a href="#about" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">ABOUT</a>
-        <a href="#modules" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">MODULES</a>
-        <a href="#testimonials" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">TESTIMONIALS</a>
-        <a href="#organizers" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">ORGANIZERS</a>
-        <a href="#gallery" class="block px-4 py-2 text-amber-300 hover:bg-gray-700">GALLERY</a>
+      <div class="hidden peer-checked:block absolute right-0 mt-2 w-48 bg-black rounded-lg shadow-lg">
+        <a href="#about" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">ABOUT</a>
+        <a href="#modules" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">MODULES</a>
+        <a href="#testimonials" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">TESTIMONIALS</a>
+        <a href="#organizers" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">ORGANIZERS</a>
+        <a href="#gallery" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">GALLERY</a>
         <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="block px-4 py-2 bg-amber-500 text-gray-900 rounded-lg hover:bg-amber-600">REGISTER</a>
       </div>
+      
     </div>
   </header>
+  
 
   
   <section
   id="countdown"
-  class="full-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center p-8";
+  class="full-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center p-8 mt-8";
 >
 <div class="content">
   <div class="text-center">
@@ -103,8 +106,8 @@
       <div class="about-overlay">
           <div class="about-text">
               
-              <h3>WHAT IS SCINNOVA?</h3>
-              <h4>Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
+              <h3 class="font-bold">WHAT IS SCINNOVA?</h3>
+              <h4 class="font-semibold ">Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
               <p>Scinnova is Cedar College’s flagship science competition, designed to be more than just an academic challenge. It is an immersive learning experience that brings together 55 teams of budding scientists from across Karachi and Pakistan, with each team comprising 5-6 members aged 14-18. This year’s Scinnova consists of eight modules, each an intellectual arena representing a distinct field of science. Together, they showcase how a deep, interdisciplinary understanding of our world fosters true critical thinking, collaboration, and innovation.
 
               With two competitive rounds in each module, students face three hours of intensive engagement per module, plus an hour dedicated to setup, briefing, scoring, and preparation. Scinnova is an arena for future problem-solvers, where hands-on challenges lead students to push beyond textbook knowledge, cultivating teamwork and critical reasoning.</p>
@@ -185,12 +188,12 @@
           id="slider-image"
           src="https://via.placeholder.com/600"
           alt="Slide Image"
-          class="w-full h-72 object-cover"
+          class="w-full h-auto object-cover"
         />
         
         <button
           id="prev"
-          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
+          class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800  text-white rounded-full p-2 hover:bg-gray-700 focus:outline-none"
         >
           &#8592;
         </button>
