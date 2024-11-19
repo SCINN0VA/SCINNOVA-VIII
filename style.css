@@ -45,7 +45,7 @@ header {
   .top-right-nav a {
     font-size: 14px;
   }
-}
+
 
 
 .logo {
@@ -214,21 +214,52 @@ button:hover {
   background-position: center;
   background-attachment: fixed;
   color: #ffffff;
+  
 }
-
 
 .container-about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  max-width: 700px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
   color: #ffffff;
-  max-width: 800px;
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.5); 
-  border-radius: 8px;
-  animation: fadeInUp 1s forwards;
+  text-align: center; 
 }
+
+
+@media (max-width: 720px) {
+  .container-about {
+    max-width: 90%; 
+    padding: 15px;
+  }
+  
+  .container-about h3 {
+    font-size: 24px; 
+  }
+  
+  .container-about p {
+    font-size: 14px; 
+    line-height: 1.6; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container-about {
+    max-width: 95%; 
+    padding: 10px;
+  }
+  
+  .container-about h3 {
+    font-size: 20px; 
+  }
+  
+  .container-about p {
+    font-size: 12px;
+    line-height: 1.4; 
+  }
+}
+
 
 .about-text {
   display: flex;
@@ -365,13 +396,20 @@ button:hover {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #ffffff;
-  max-width: 800px;
-  padding: 40px;
+  max-width: 90%; 
+  padding: 20px;
   background: rgba(0, 0, 0, 0.5); 
   border-radius: 8px;
-  animation: fadeInUp 1s forwards;
 }
+.testimonial {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #f0f0f0;
+  text-align: center; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
 
 #testimonials h2 {
   font-size: 40px;
@@ -380,20 +418,22 @@ button:hover {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.testimonial {
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #f0f0f0;
-  text-align: justify;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
 
 .testimonial h4 {
   margin-top: 15px;
   font-size: 18px;
   color: #d6b013;
   text-align: right;
+}
+@media (max-width: 720px) {
+  #about h3,
+  #testimonials h2 {
+    font-size: 20px;
+  }
+  #about p,
+  .testimonial {
+    font-size: 12px;
+  }
 }
 
 #organizers {
