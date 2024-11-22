@@ -548,7 +548,7 @@ button:hover {
   display: flex;
   gap: 25px;
   width: 100%; 
-  animation: marquee 50s linear infinite; 
+  animation: marquee 20s linear infinite; 
 }
 
 .gallery-item {

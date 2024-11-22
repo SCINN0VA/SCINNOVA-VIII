@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <header class="flex justify-between items-center p-4 px-8 backdrop-blur shadow-md fixed top-0 w-full max-w-auto z-10">
+  <header class="flex justify-between items-center p-4 px-6 backdrop-blur shadow-md fixed top-0 w-full max-w-auto z-10">
 
     <!-- Logo for All Screens -->
     <div class="flex items-center md:hidden lg:hidden">
@@ -66,253 +66,244 @@
   
   <section
   id="countdown"
-  class="full-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center p-8 mt-8";
+  class="full-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center p-6 mt-4"
 >
-<div class="content">
-  <div class="text-center">
-    <h1 class="text-shadow-lg">We're <span>Launching</span> Soon</h1>
-    <!-- Countdown timer -->
-    <div class="launch-time flex justify-center gap-4 mt-6">
-      <div>
-        <p id="days">00</p>
-        <span class="text-shadow-lg">Days</span>
+  <div class="content">
+    <div class="text-center">
+      <h1 class="text-shadow-lg">We're <span>Launching</span> Soon</h1>
+      <!-- Countdown timer -->
+      <div class="launch-time flex justify-center gap-3 mt-4">
+        <div>
+          <p id="days">00</p>
+          <span class="text-shadow-lg">Days</span>
+        </div>
+        <div>
+          <p id="hours">00</p>
+          <span class="text-shadow-lg">Hours</span>
+        </div>
+        <div>
+          <p id="minutes">00</p>
+          <span class="text-shadow-lg">Minutes</span>
+        </div>
+        <div>
+          <p id="seconds">00</p>
+          <span class="text-shadow-lg">Seconds</span>
+        </div>
       </div>
-      <div>
-        <p id="hours">00</p>
-        <span class="text-shadow-lg">Hours</span>
+      <!-- Register button -->
+      <div class="mt-4">
+        <button class="learn-more">
+          <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
+        </button>
       </div>
-      <div>
-        <p id="minutes">00</p>
-        <span class="text-shadow-lg">Minutes</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="full-screen-about-us py-8">
+  <div class="container-about">
+    <div class="about-overlay">
+      <div class="about-text">
+        <h3 class="font-bold">WHAT IS SCINNOVA?</h3>
+        <h4 class="font-semibold">Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
+        <p>
+          Scinnova is Cedar College’s flagship science competition, designed to be more than just an academic challenge. It is an immersive
+          learning experience that brings together 55 teams of budding scientists from across Karachi and Pakistan, with each team
+          comprising 5-6 members aged 14-18. This year’s Scinnova consists of eight modules, each an intellectual arena representing a
+          distinct field of science. Together, they showcase how a deep, interdisciplinary understanding of our world fosters true critical
+          thinking, collaboration, and innovation.
+        </p>
+        <p>
+          With two competitive rounds in each module, students face three hours of intensive engagement per module, plus an hour dedicated
+          to setup, briefing, scoring, and preparation. Scinnova is an arena for future problem-solvers, where hands-on challenges lead
+          students to push beyond textbook knowledge, cultivating teamwork and critical reasoning.
+        </p>
       </div>
-      <div>
-        <p id="seconds">00</p>
-        <span class="text-shadow-lg">Seconds</span>
+    </div>
+  </div>
+</section>
+
+<section class="module-container space-y-6 px-6 py-8">
+  <div class="space-y-8 mx-auto px-4">
+    <!-- Module 1 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-4 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row items-center gap-4">
+        <img src="assets/4img.webp" alt="Arcanum module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Arcanum</h3>
+          <p class="text-white">
+            Arcanum introduces students to the intersection of science and mystery. Using forensic science, data encryption, and logic
+            puzzles, teams tackle scenarios involving cryptographic challenges and crime scene analysis. This module develops analytical
+            and deductive reasoning skills, teaching students the applications of mathematics, logic, and technology in solving real-world
+            puzzles and uncovering hidden patterns.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Register button -->
-    <div class="mt-8">
-      <button class="learn-more">
-        <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank">Register Now</a>
-      </button>
+    <!-- Module 2 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-4 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-4">
+        <img src="assets/5img.webp" alt="Illuminatio module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Illuminatio</h3>
+          <p class="text-white">
+            In Illuminatio, students engage in hands-on experiments, delving into the composition and transformation of matter. Teams
+            conduct experiments that reveal chemical reactions, molecular structures, and energy dynamics. This module emphasizes safety
+            protocols, attention to detail, and the scientific method.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <!-- Module 3 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-4 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row items-center gap-4">
+        <img src="assets/2img.webp" alt="Ptolemy's Puzzles module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Ptolemy's Puzzles</h3>
+          <p class="text-white">
+            Named after the renowned mathematician Ptolemy, this module involves complex problem-solving, mathematical modeling, and logical
+            puzzles. Students apply algebra, geometry, and calculus to solve theoretical and practical challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-4 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-4">
+        <img src="assets/3img.webp" alt="Planck's Paradox module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Planck's Paradox</h3>
+          <p class="text-white">
+            Planck’s Paradox brings theoretical physics to life by guiding students through paradoxes and scenarios where common sense meets
+            scientific complexity. From exploring quantum mechanics to relativistic principles, students grapple with concepts that stretch
+            their critical thinking.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-4 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row items-center gap-4">
+        <img src="assets/6img.webp" alt="Asclepius module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Asclepius</h3>
+          <p class="text-white">
+            Named after the Greek god of medicine, Asclepius offers students a journey into the life sciences. Through dissections, genetic
+            analysis, and simulations of biological processes, participants experience the complexity of living organisms.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Module 6 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
+        <img src="assets/7img.webp" alt="RedShift module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">RedShift</h3>
+          <p class="text-white">
+            Redshift immerses students in the mysteries of space, challenging them to explore concepts of astrophysics and cosmology. 
+            Teams use telescopic data, star maps, and astrophysical simulations to investigate celestial phenomena. The module nurtures 
+            observational skills and scientific reasoning, encouraging students to draw connections between abstract physics theories 
+            and tangible data from the universe, thus understanding our cosmic neighborhood in a holistic manner.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 7 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row items-center gap-6">
+        <img src="assets/1img.webp" alt="Automation module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Automation</h3>
+          <p class="text-white">
+            In the Robotics module, students dive into robotics, applying engineering principles, physics, and coding skills to design 
+            and program functional robots. Participants collaborate to solve specific tasks, fostering an understanding of mechanics, 
+            control systems, and problem-solving through real-time testing and modification. Students learn how mechanical systems 
+            and computer algorithms can harmonize, illustrating the interdisciplinary nature of engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 8 -->
+    <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
+      <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
+        <img src="assets/8img.webp" alt="Freud's Foresit module image" class="w-full max-w-md rounded-lg">
+        <div class="module-text max-w-2xl">
+          <h3 class="text-2xl font-bold mb-2 text-amber-300">Freud's Foresit</h3>
+          <p class="text-white">
+            This module encourages students to enter the fascinating field of psychology, focusing on human behavior and cognitive 
+            functions. Through experimental tasks, role-playing, and group scenarios, students study psychological theories and apply 
+            them to real-life settings. Freud’s Foresit reinforces the importance of understanding human interactions, fostering empathy, 
+            and exploring the human mind. This module reminds students that scientific inquiry extends beyond physical phenomena to 
+            include the intricacies of human nature.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</section>
+
+<section id="testimonials" class="py-6">
+  <div class="container-testimonials">
+    <h2 class="text-white">Testimonials</h2>
+    <div class="testimonial">
+      <p>"SCINNOVA showcases where outstanding creativity meets exemplary execution, highlighting the remarkable potential of today’s youth."</p>
+    </div>
+    <div class="testimonial">
+        <p>"SCINNOVA is one of those rare experiences that you feel proud to be a part of. It’s reassuring to know there is a forum where fun-loving and curious minds are nurtured to better understand how to integrate real-world problems with their knowledge and available tools. A true marvel in its execution, SCINNOVA represents the immense potential of this generation."</p>
+        <h4>- Dr. Athar Osama</h4>
+    </div>
+    <div class="testimonial">
+        <p>"Having attended SCINNOVA last year, I was inspired by the passion and dedication of the participants and organizing team. This event nurtures innovative thinking and problem-solving skills. The commitment to excellence highlights the impressive capabilities of our youth and lays the groundwork for a future where science and creativity thrive. SCINNOVA is a testament to the potential of the next generation of innovators."</p>
+        <h4>- Dr. Sabieh Anwar</h4>
+    </div>
+    <div class="testimonial">
+        <p>"SCINNOVA has been a journey of both challenges and triumphs. We’ve experienced the full spectrum of burnout and success through countless hours of dedicated work. Each year, we surpass our previous achievements, continuously striving to offer every young mind an opportunity to excel in the field of STEM."</p>
+        <h4>- Ruhab Iqbal</h4>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="organizers" class="py-0">
+  <div class="container-organizers">
+    <h2>Meet the Organizers</h2>
+    <div class="organizers-grid">
+      <div class="organizer">
+          <img src="assets/sir roque.webp" alt="Roque Martin D.Mello">
+          <h4>Roque Martin D.Mello</h4>
+          <p class="role">Director</p>
+          <blockquote>"Every single piece of information is important."</blockquote>
+      </div>
+      <div class="organizer">
+          <img src="assets/sir husham.webp" alt="Dr Husham Arshad">
+          <h4>Dr Husham Arshad</h4>
+          <p class="role">Co-Director</p>
+          <blockquote>"You just need to listen to the inner voices."</blockquote>
+      </div>
+      <div class="organizer">
+          <img src="assets/sir humayun.webp" alt="Humayun Saleem">
+          <h4>Humayun Saleem</h4>
+          <p class="role">Patron</p>
+          <blockquote>"Skills can enhance once interest is developed."</blockquote>
+      </div>
   </div>
 </div>
 </section>
 
-<section id="about" class="full-screen-about-us">
-  <div class="container-about">
-      <div class="about-overlay">
-          <div class="about-text">
-              
-              <h3 class="font-bold">WHAT IS SCINNOVA?</h3>
-              <h4 class="font-semibold ">Scinnova 2024: Igniting Young Minds through Transdisciplinary Exploration</h4>
-              <p>Scinnova is Cedar College’s flagship science competition, designed to be more than just an academic challenge. It is an immersive learning experience that brings together 55 teams of budding scientists from across Karachi and Pakistan, with each team comprising 5-6 members aged 14-18. This year’s Scinnova consists of eight modules, each an intellectual arena representing a distinct field of science. Together, they showcase how a deep, interdisciplinary understanding of our world fosters true critical thinking, collaboration, and innovation.
-
-              With two competitive rounds in each module, students face three hours of intensive engagement per module, plus an hour dedicated to setup, briefing, scoring, and preparation. Scinnova is an arena for future problem-solvers, where hands-on challenges lead students to push beyond textbook knowledge, cultivating teamwork and critical reasoning.</p>
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="module-container space-y-8 px-6 py-12 ">
-    <div class="space-y-12 mx-auto px-4">
-      <!-- Module 1 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row items-center gap-6">
-          <img src="assets/4img.webp" alt="Arcanum module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Arcanum</h3>
-            <p class="text-white">
-              Arcanum introduces students to the intersection of science and mystery. Using forensic science, data encryption, 
-              and logic puzzles, teams tackle scenarios involving cryptographic challenges and crime scene analysis. This module 
-              develops analytical and deductive reasoning skills, teaching students the applications of mathematics, logic, 
-              and technology in solving real-world puzzles and uncovering hidden patterns.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 2 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
-          <img src="assets/5img.webp" alt="Illuminatio module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300 ">Illuminatio</h3>
-            <p class="text-white">
-              In Illuminatio, students engage in hands-on experiments, delving into the composition and transformation of matter. 
-              Teams conduct experiments that reveal chemical reactions, molecular structures, and energy dynamics. This module 
-              emphasizes safety protocols, attention to detail, and the scientific method. Students learn the powerful role chemistry 
-              plays across fields, from healthcare to environmental science, gaining insights into how elements and compounds 
-              are central to life.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 3 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row items-center gap-6">
-          <img src="assets/2img.webp" alt="Ptolemy's Puzzles module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Ptolemy's Puzzles</h3>
-            <p class="text-white">
-              Named after the renowned mathematician Ptolemy, this module involves complex problem-solving, mathematical modeling, 
-              and logical puzzles. Students apply algebra, geometry, and calculus to solve theoretical and practical challenges, 
-              fostering a deep understanding of mathematical principles. Ptolemy’s Puzzle emphasizes the universality of mathematics, 
-              showing how it underpins all scientific disciplines and helps us decode the world.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 4 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
-          <img src="assets/3img.webp" alt="Planck's Paradox module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Planck's Paradox</h3>
-            <p class="text-white">
-              Planck’s Paradox brings theoretical physics to life by guiding students through paradoxes and scenarios where common 
-              sense meets scientific complexity. From exploring quantum mechanics to relativistic principles, students grapple with 
-              concepts that stretch their critical thinking. This module develops reasoning and analytical skills, teaching students 
-              that physics is not merely formulaic but a way to interpret reality, bridging abstract theory with logical problem-solving.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 5 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row items-center gap-6">
-          <img src="assets/6img.webp" alt="Asclepius module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Asclepius</h3>
-            <p class="text-white">
-              Named after the Greek god of medicine, Asclepius offers students a journey into the life sciences. Through dissections, 
-              genetic analysis, and simulations of biological processes, participants experience the complexity of living organisms. 
-              This module fosters respect for life and an understanding of biology’s role in medicine, genetics, and ecology, encouraging 
-              students to think critically about ethical and scientific issues that impact our world.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 6 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
-          <img src="assets/7img.webp" alt="RedShift module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">RedShift</h3>
-            <p class="text-white">
-              Redshift immerses students in the mysteries of space, challenging them to explore concepts of astrophysics and cosmology. 
-              Teams use telescopic data, star maps, and astrophysical simulations to investigate celestial phenomena. The module nurtures 
-              observational skills and scientific reasoning, encouraging students to draw connections between abstract physics theories 
-              and tangible data from the universe, thus understanding our cosmic neighborhood in a holistic manner.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 7 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row items-center gap-6">
-          <img src="assets/1img.webp" alt="Automation module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Automation</h3>
-            <p class="text-white">
-              In the Robotics module, students dive into robotics, applying engineering principles, physics, and coding skills to design 
-              and program functional robots. Participants collaborate to solve specific tasks, fostering an understanding of mechanics, 
-              control systems, and problem-solving through real-time testing and modification. Students learn how mechanical systems 
-              and computer algorithms can harmonize, illustrating the interdisciplinary nature of engineering.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Module 8 -->
-      <div class="rounded-lg border border-gray-300 shadow-lg p-6 backdrop-blur hidn">
-        <div class="flex flex-col lg:flex-row-reverse items-center gap-6">
-          <img src="assets/8img.webp" alt="Freud's Foresit module image" class="w-full max-w-md rounded-lg">
-          <div class="module-text max-w-2xl">
-            <h3 class="text-2xl font-bold mb-2 text-amber-300">Freud's Foresit</h3>
-            <p class="text-white">
-              This module encourages students to enter the fascinating field of psychology, focusing on human behavior and cognitive 
-              functions. Through experimental tasks, role-playing, and group scenarios, students study psychological theories and apply 
-              them to real-life settings. Freud’s Foresit reinforces the importance of understanding human interactions, fostering empathy, 
-              and exploring the human mind. This module reminds students that scientific inquiry extends beyond physical phenomena to 
-              include the intricacies of human nature.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  <script src="script.js"></script>
-</section>
 
 
-
-
-
-
- 
-<section id="testimonials">
-  <div class="container-testimonials">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-          <p>"As the chief guest of SCINNOVA III, I was truly impressed by the exceptional planning and execution demonstrated by both the organizing team and the participants. SCINNOVA showcases where outstanding creativity meets exemplary execution, highlighting the remarkable potential of today’s youth."</p>
-          <h4>- Pervez Hoodbhoy</h4>
-      </div>
-      <div class="testimonial">
-          <p>"SCINNOVA is one of those rare experiences that you feel proud to be a part of. It’s reassuring to know there is a forum where fun-loving and curious minds are nurtured to better understand how to integrate real-world problems with their knowledge and available tools. A true marvel in its execution, SCINNOVA represents the immense potential of this generation."</p>
-          <h4>- Dr. Athar Osama</h4>
-      </div>
-      <div class="testimonial">
-          <p>"Having attended SCINNOVA last year, I was inspired by the passion and dedication of the participants and organizing team. This event nurtures innovative thinking and problem-solving skills. The commitment to excellence highlights the impressive capabilities of our youth and lays the groundwork for a future where science and creativity thrive. SCINNOVA is a testament to the potential of the next generation of innovators."</p>
-          <h4>- Dr. Sabieh Anwar</h4>
-      </div>
-      <div class="testimonial">
-          <p>"SCINNOVA has been a journey of both challenges and triumphs. We’ve experienced the full spectrum of burnout and success through countless hours of dedicated work. Each year, we surpass our previous achievements, continuously striving to offer every young mind an opportunity to excel in the field of STEM."</p>
-          <h4>- Ruhab Iqbal</h4>
-      </div>
-  </div>
-  </div>
-</section>
-
-
-<section id="organizers">
-  <div class="container-organizers">
-      <h2>Meet the Organizers</h2>
-      <div class="organizers-grid">
-          <div class="organizer">
-              <img src="assets/sir roque.webp" alt="Roque Martin D.Mello">
-              <h4>Roque Martin D.Mello</h4>
-              <p class="role">Director</p>
-              <blockquote>"Every single piece of information is important."</blockquote>
-          </div>
-          <div class="organizer">
-              <img src="assets/sir husham.webp" alt="Dr Husham Arshad">
-              <h4>Dr Husham Arshad</h4>
-              <p class="role">Co-Director</p>
-              <blockquote>"You just need to listen to the inner voices."</blockquote>
-          </div>
-          <div class="organizer">
-              <img src="assets/sir humayun.webp" alt="Humayun Saleem">
-              <h4>Humayun Saleem</h4>
-              <p class="role">Patron</p>
-              <blockquote>"Skills can enhance once interest is developed."</blockquote>
-          </div>
-      </div>
-  </div>
-</section>
-
-
-
-<section id="gallery">
-    <div class="gallery-container">
-        <div class="gallery-item" style="background-image: url('assets/chem2.webp');"></div>
+<section id="gallery" class="py-0">
+  <div class="gallery-container">
+    <div class="gallery-item" style="background-image: url('assets/chem2.webp');"></div>
         <div class="gallery-item" style="background-image: url('assets/phys3.webp');"></div>
         <div class="gallery-item" style="background-image: url('assets/trophy.webp');"></div>
         <div class="gallery-item" style="background-image: url('assets/bio4\ \(1\).webp');"></div>
@@ -329,11 +320,6 @@
         <div class="gallery-item" style="background-image: url('assets/robo.webp');"></div>
   </div>
 </section>
-
-
-
-
-
 
     
   
