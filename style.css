@@ -374,8 +374,7 @@ button:hover {
 
 .right-arrow {
   right: 20px;
-}
-
+}  
 
 #testimonials {
   position: relative;
@@ -528,6 +527,78 @@ button:hover {
   }
 }
 
+#faq {
+  font-family: Arial, sans-serif;
+  padding: 100px 20px;
+  background-color: #f9f9f9;
+  background-image: url(assets/starryhori.webp);
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  position: relative;
+ 
+ 
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #FFD700, #FF4500);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.faq-question {
+  background: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff; 
+  transition: background-color 0.3s ease; 
+}
+
+.faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+.faq-question span {
+  font-size: 24px;
+  color: #555;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+.faq-question.active + .faq-answer {
+  display: block;
+}
 
 #gallery {
   position: relative;
@@ -787,4 +858,53 @@ footer a {
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+@media (max-width: 1024px) {
+  #faq {
+    padding: 40px 0; 
+  }
+
+  #faq .faq-container {
+    max-width: 90%; 
+    margin: 30px auto; 
+    padding: 15px;
+  }
+
+  #faq .faq-heading {
+    font-size: 20px; 
+  }
+
+  #faq .faq-question {
+    font-size: 16px; 
+    padding: 8px 0; 
+  }
+
+  #faq .faq-answer {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 768px) {
+  #faq {
+    padding: 30px 0; 
+  }
+
+  #faq .faq-container {
+    max-width: 95%; 
+    margin: 20px auto; 
+    padding: 10px;
+  }
+
+  #faq .faq-heading {
+    font-size: 18px; 
+  }
+
+  #faq .faq-question {
+    font-size: 14px; 
+    padding: 6px 0;
+  }
+
+  #faq .faq-answer {
+    font-size: 12px; 
+  }
 }
