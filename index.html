@@ -38,7 +38,7 @@
       <!-- Last three navigation links -->
       <div class="flex">
         <a href="#organizers" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">ORGANIZERS</a>
-        <a href="#faq" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">FAQs</a>
+        <a href="#gallery" class="nav-item px-3 py-1 text-amber-300/80 hover:text-white rounded-full">GALLERY</a>
         <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="nav-item px-3 py-1 text-amber-300 hover:text-white rounded-full">REGISTER</a>
       </div>
     </nav>
@@ -58,7 +58,7 @@
         <a href="#modules" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">Modules</a>
         <a href="#testimonials" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">Testimonials</a>
         <a href="#organizers" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">Organizers</a>
-        <a href="#faq" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">FAQs</a>
+        <a href="#gallery" class="block px-4 py-2 text-amber-300 hover:bg-gray-700 hover:rounded-lg border-b border-white/20 ">Gallery</a>
         <a href="https://forms.gle/up5yYbKgsx7d3CT28" target="_blank" class="block px-4 py-2 bg-amber-500 text-gray-900 rounded-lg hover:bg-amber-600">Register</a>
       </div>
       
@@ -302,26 +302,6 @@
 </div>
 </section>
 
-<section id="faq" class="py-0">
-  <div class="faq-container">
-    <div class="faq-heading">Frequently Asked Questions</div>
-    <button class="faq-question">When will we get the itinerary? <span>+</span></button>
-    <div class="faq-answer">The itinerary will be shared a week before the olympiad.</div>
-
-    <button class="faq-question">What are the timings? <span>+</span></button>
-    <div class="faq-answer">The timings will be shared in the itinerary.</div>
-
-    <button class="faq-question">Can a 13 year old take part in SCINNOVA VIII?<span>+</span></button>
-    <div class="faq-answer">Unfortunately not. Only student from grade 9 to university level can participate.</div>
-    
-    <button class="faq-question">How many members are allowed per team? <span>+</span></button>
-    <div class="faq-answer">There have to be at least six members in a team, with seven being the maximum number of members you can pair with.</div>
-    
-    <button class="faq-question">Where will SCINNOVA VIII be held? <span>+</span></button>
-    <div class="faq-answer">SCINNOVA VII will be held at Cedar College DHA campus, Karachi.</div>
-
-  </div>
-</section>
 
 <section id="gallery" class="py-0">
   <div class="gallery-container">
@@ -426,17 +406,6 @@ const hiddenElements =  document.querySelectorAll('.hidn');
 hiddenElements.forEach((el) => observer.observe(el));
 </script>
 
-
-<script>
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      const answer = button.nextElementSibling;
-      button.classList.toggle('active');
-      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-      button.querySelector('span').textContent = button.classList.contains('active') ? '-' : '+';
-    });
-  });
-</script>
 
 <footer style="background-color: #070a15; padding: 10px; text-align: center; font-size: 14px; color: white;">
 
