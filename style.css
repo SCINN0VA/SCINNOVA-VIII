@@ -787,3 +787,123 @@ footer a {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+#study-guides {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  background-image: url('assets/starryhori.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+
+}
+
+#study-guides .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#study-guides h2 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.study-guides-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;
+}
+
+.study-guide {
+  text-align: center;
+}
+
+.study-guide img {
+  max-width: 90%; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.study-guide img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.study-guide p {
+  margin-top: 12px;
+  font-size: 18px; 
+  color: #ffd700; /
+}
+
+
+@media (max-width: 767px) {
+  #study-guides h2 {
+    font-size: 20px; 
+    text-align: center;
+  }
+
+  .study-guides-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    justify-items: center; 
+  }
+
+  #study-guides {
+    padding: 60px 10px; 
+    text-align: center; 
+  }
+
+  .study-guide {
+    text-align: center; 
+  }
+
+  .study-guide img {
+    max-width: 80%;
+  }
+
+  .study-guide p {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #study-guides h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .study-guides-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px; 
+    justify-items: center; 
+  }
+
+  #study-guides {
+    padding: 50px 5px;
+    text-align: center;
+  }
+
+  .study-guide {
+    text-align: center;
+  }
+
+  .study-guide img {
+    max-width: 100%; 
+  }
+
+  .study-guide p {
+    font-size: 14px; 
+  }
+}
+
