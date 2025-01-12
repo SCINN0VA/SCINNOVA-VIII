@@ -907,3 +907,30 @@ footer a {
   }
 }
 
+
+.itinerary-section {
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  min-height: 100vh;
+  background-image: url('assets/starryhori.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+
+  
+}
+
+
+.itinerary-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+}
